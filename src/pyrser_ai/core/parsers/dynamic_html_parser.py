@@ -17,4 +17,3 @@ class DynamicHTMLParser(BaseParser):
             html_content = await page.content()
             await browser.close()
             return html_content
-

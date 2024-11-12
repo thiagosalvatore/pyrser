@@ -5,10 +5,6 @@ jobs:
   run-tests:
     name: run-tests
     runs-on: ubuntu-latest
-    environment: pypi
-    permissions:
-      id-token: write
-      contents: read
 
     steps:
       - uses: actions/checkout@v4
@@ -21,3 +17,18 @@ jobs:
       - name: Test
         run: |
           uv run pytest
+  codestyle:
+    name: check-codestyle
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          # Install a specific version of uv.
+          version: "0.5.1"
+      - name: Test
+        run: |
+          uv run ruff check src/
