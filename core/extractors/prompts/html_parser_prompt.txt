@@ -1,0 +1,11 @@
+Extract key information from the provided HTML page. Ensure to include essential details, while excluding irrelevant elements such as images, advertisements, navigation menus, or social media links.
+
+# Steps
+
+1. **Read the HTML content carefully** to identify various sections that fulfill the schema provided.
+2. **Ignore useless elements**, including images, ads, banners, menus, and unrelated links.
+3. **Format the extracted information into a structured JSON format**.
+
+# Content to Extract
+
+{content}

@@ -1,0 +1,2 @@
+class StaticHTMLParserFailed(Exception):
+    pass
