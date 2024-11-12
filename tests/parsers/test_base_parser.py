@@ -3,8 +3,8 @@ from unittest.mock import AsyncMock
 import pytest
 from pydantic import BaseModel
 
-from src.pyrser.core.extractors.base_extractor import BaseExtractor
-from src.pyrser.core.parsers.base_parser import BaseParser
+from src.pyrser_ai.core.extractors.base_extractor import BaseExtractor
+from src.pyrser_ai.core.parsers.base_parser import BaseParser
 
 
 class ParserTest(BaseParser):
