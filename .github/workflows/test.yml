@@ -14,9 +14,17 @@ jobs:
         with:
           # Install a specific version of uv.
           version: "0.5.1"
-      - name: Test
-        run: |
-          uv run pytest
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Install the project
+        run: uv sync --all-extras --dev
+
+      - name: Run tests
+        # For example, using `pytest`
+        run: uv run pytest tests
+
   codestyle:
     name: check-codestyle
     runs-on: ubuntu-latest
@@ -29,6 +37,13 @@ jobs:
         with:
           # Install a specific version of uv.
           version: "0.5.1"
-      - name: Test
-        run: |
-          uv run ruff check src/
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Install the project
+        run: uv sync --all-extras --dev
+
+      - name: Run Linter
+        # For example, using `pytest`
+        run: uv run ruff check src/
