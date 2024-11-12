@@ -5,7 +5,7 @@ from llama_index.core.program import LLMTextCompletionProgram
 from llama_index.llms.openai import OpenAI, AsyncOpenAI
 from pydantic import BaseModel
 
-from core.extractors.base_extractor import BaseExtractor
+from pyrser.core.extractors.base_extractor import BaseExtractor
 
 
 class LlamaIndexExtractor(BaseExtractor):

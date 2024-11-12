@@ -1,8 +1,8 @@
 from aiohttp import ClientSession
 
-from core.extractors.base_extractor import BaseExtractor
-from core.parsers.base_parser import BaseParser
-from core.parsers.exceptions import StaticHTMLParserFailed
+from pyrser.core.extractors.base_extractor import BaseExtractor
+from pyrser.core.parsers.base_parser import BaseParser
+from pyrser.core.parsers.exceptions import StaticHTMLParserFailed
 
 
 class StaticHTMLParser(BaseParser):

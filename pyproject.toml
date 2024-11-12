@@ -1,7 +1,7 @@
 [project]
 name = "pyrser"
 version = "0.1.0"
-description = "Add your description here"
+description = "Turn any HTML page into a pydantic object"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -14,7 +14,20 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "aresponses>=3.0.0",
     "pre-commit>=4.0.1",
+    "pytest-asyncio>=0.24.0",
     "pytest>=8.3.3",
     "ruff>=0.7.3",
 ]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+only-include = ["src/pyrser"]

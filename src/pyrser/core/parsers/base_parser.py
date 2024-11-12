@@ -3,8 +3,8 @@ from abc import ABC, abstractmethod
 from bs4 import BeautifulSoup, Tag, Comment
 from pydantic import BaseModel
 
-from core.extractors.base_extractor import BaseExtractor
-from core.extractors.llama_index_extractor import LlamaIndexExtractor
+from pyrser.core.extractors.base_extractor import BaseExtractor
+from pyrser.core.extractors.llama_index_extractor import LlamaIndexExtractor
 
 TAGS_TO_REMOVE = [
     "img",
