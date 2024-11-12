@@ -22,4 +22,5 @@ jobs:
           version: "0.5.1"
       - name: Publish
         run: |
+          ls -la
           uv publish
