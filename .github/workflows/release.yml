@@ -1,5 +1,8 @@
 name: Release Pyrser
-
+on:
+  push:
+    branches:
+      - main
 jobs:
   pypi-publish:
     name: python
