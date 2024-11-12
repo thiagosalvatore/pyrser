@@ -1,5 +1,5 @@
 [project]
-name = "pyrser"
+name = "pyrser-ai"
 version = "0.1.0"
 description = "Turn any HTML page into a pydantic object"
 readme = "README.md"
