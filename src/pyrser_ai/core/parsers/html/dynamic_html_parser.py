@@ -1,10 +1,10 @@
 from fake_useragent import UserAgent
 from playwright.async_api import async_playwright
 
-from pyrser_ai.core.parsers.html.base_html_parser import BaseParser
+from pyrser_ai.core.parsers.html.base_html_parser import BaseHTMLParser
 
 
-class DynamicHTMLParser(BaseParser):
+class DynamicHTMLParser(BaseHTMLParser):
     async def _get_html_content(self, url: str) -> str:
         async with async_playwright() as p:
             ua = UserAgent()

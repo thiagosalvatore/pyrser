@@ -1,11 +1,11 @@
 from aiohttp import ClientSession
 
 from pyrser_ai.core.extractors.base_extractor import BaseExtractor
-from pyrser_ai.core.parsers.html.base_html_parser import BaseParser
+from pyrser_ai.core.parsers.html.base_html_parser import BaseHTMLParser
 from pyrser_ai.core.parsers.html.exceptions import StaticHTMLParserFailed
 
 
-class StaticHTMLParser(BaseParser):
+class StaticHTMLParser(BaseHTMLParser):
     def __init__(
         self, http_client: ClientSession, extractor: BaseExtractor | None = None
     ):

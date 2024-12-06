@@ -4,10 +4,10 @@ import pytest
 from pydantic import BaseModel
 
 from src.pyrser_ai.core.extractors.base_extractor import BaseExtractor
-from pyrser_ai.core.parsers.html.base_html_parser import BaseParser
+from pyrser_ai.core.parsers.html.base_html_parser import BaseHTMLParser
 
 
-class ParserTest(BaseParser):
+class ParserTest(BaseHTMLParser):
     async def _get_html_content(self, url: str) -> str:
         return """<div>Hello</div><span as='b'>test</span><a></a><p style='display: none'>test</p>"""
 
