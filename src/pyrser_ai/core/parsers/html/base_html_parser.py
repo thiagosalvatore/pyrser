@@ -31,7 +31,7 @@ TAGS_TO_REMOVE = [
 ]
 
 
-class BaseParser(ABC):
+class BaseHTMLParser(ABC):
     def __init__(self, extractor: BaseExtractor | None = None):
         self.__extractor = extractor or LlamaIndexExtractor()
 

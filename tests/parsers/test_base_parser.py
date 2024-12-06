@@ -4,7 +4,7 @@ import pytest
 from pydantic import BaseModel
 
 from src.pyrser_ai.core.extractors.base_extractor import BaseExtractor
-from src.pyrser_ai.core.parsers.base_parser import BaseParser
+from pyrser_ai.core.parsers.html.base_html_parser import BaseParser
 
 
 class ParserTest(BaseParser):

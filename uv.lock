@@ -1500,13 +1500,14 @@ wheels = [
 
 [[package]]
 name = "pyrser-ai"
-version = "0.1.1"
+version = "0.1.2"
 source = { editable = "." }
 dependencies = [
     { name = "aiohttp" },
     { name = "beautifulsoup4" },
     { name = "fake-useragent" },
     { name = "llama-index" },
+    { name = "llama-parse" },
     { name = "lxml" },
     { name = "pydantic" },
 ]
@@ -1531,6 +1532,7 @@ requires-dist = [
     { name = "beautifulsoup4", specifier = ">=4.12.3" },
     { name = "fake-useragent", specifier = ">=1.5.1" },
     { name = "llama-index", specifier = ">=0.11.23" },
+    { name = "llama-parse", specifier = ">=0.5.13" },
     { name = "lxml", specifier = ">=5.3.0" },
     { name = "playwright", marker = "extra == 'full'", specifier = ">=1.48.0" },
     { name = "pydantic", specifier = ">=2.9.2" },

@@ -1,7 +1,7 @@
 from fake_useragent import UserAgent
 from playwright.async_api import async_playwright
 
-from pyrser_ai.core.parsers.base_parser import BaseParser
+from pyrser_ai.core.parsers.html.base_html_parser import BaseParser
 
 
 class DynamicHTMLParser(BaseParser):

@@ -5,7 +5,7 @@ import pytest
 from pydantic import BaseModel
 
 from src.pyrser_ai.core.extractors.base_extractor import BaseExtractor
-from src.pyrser_ai.core.parsers.static_html_parser import StaticHTMLParser
+from pyrser_ai.core.parsers.html.static_html_parser import StaticHTMLParser
 
 
 class OutputModelTest(BaseModel):

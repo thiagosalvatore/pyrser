@@ -1,0 +1,2 @@
+class DocumentReadFailed(Exception):
+    pass
